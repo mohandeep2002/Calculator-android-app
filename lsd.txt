@@ -1,0 +1,16 @@
+class Solution:
+    def makeFancyString(self, s: str) -> str:
+        sam = ""
+        gr = 0
+        if len(s)<3:
+            return s
+        for gr in range(len(s) - 2):
+            if s[gr] == s[gr+1] and s[gr+1]==s[gr+2]:
+                continue
+            else:
+                sam = sam + s[gr]
+        if len(s)>=3:
+            sam = sam + s[gr + 1]
+            sam = sam + s[gr + 2]
+                
+        return sam

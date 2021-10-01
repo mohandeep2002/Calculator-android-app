@@ -168,7 +168,6 @@ class MainActivity : AppCompatActivity() {
         if (result.text != "") {
             expression.text = ""
         }
-
         // 85+25
         // = 110
         // Press 2
